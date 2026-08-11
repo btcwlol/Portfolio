@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Your Name] — Ideas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FAF8F4;
+    --ink: #1B2A4A;
+    --ink-soft: #4A5568;
+    --rule: #DCD5C6;
+    --accent: #B08D3E;
+    --accent-soft: #E9DFC4;
+    --max-w: 720px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  header {
+    position: sticky;
+    top: 0;
+    background: rgba(250, 248, 244, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--rule);
+    z-index: 10;
+  }
+
+  .header-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .brand {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+  }
+
+  nav a {
+    margin-left: 20px;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  nav a:hover { color: var(--ink); }
+
+  main {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .eyebrow {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 22px;
+  }
+
+  .lede {
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+    margin: 0 0 48px;
+  }
+
+  section { margin-top: 64px; }
+
+  h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 40px;
+    margin-bottom: 8px;
+  }
+
+  .essay-list { list-style: none; padding: 0; margin: 0; }
+
+  .essay {
+    display: block;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+  }
+  .essay:first-child { padding-top: 0; }
+
+  .essay-title {
+    font-family: 'Newsreader', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+
+  .essay-meta {
+    font-size: 0.82rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+
+  .essay-blurb {
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .about-block {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .about-mark {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer a { color: var(--ink-soft); }
+
+  @media (max-width: 480px) {
+    nav a { margin-left: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">[Your Name]</div>
+    <nav>
+      <a href="#essays">Ideas</a>
+      <a href="#about">About</a>
+      <a href="mailto:you@example.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="eyebrow">Personal site</div>
+  <h1>Notes on [your field or theme] — written to be argued with.</h1>
+  <p class="lede">
+    I'm [Your Name], [one line on who you are / what you do]. This is where I
+    write up the ideas I'm chewing on — sometimes fully formed, sometimes just
+    a question I can't put down.
+  </p>
+
+  <section id="essays">
+    <h2>Ideas</h2>
+    <ul class="essay-list">
+      <li>
+        <a class="essay" href="#">
+          <div class="essay-meta">2026</div>
+          <div class="essay-title">[Title of your first idea or essay]</div>
+          <p class="essay-blurb">[One or two sentences summarizing the piece — what claim it makes and why it matters.]</p>
+        </a>
+      </li>
+      <li>
+        <a class="essay" href="#">
+          <div class="essay-meta">2026</div>
+          <div class="essay-title">[Title of your second idea or essay]</div>
+          <p class="essay-blurb">[One or two sentences summarizing the piece.]</p>
+        </a>
+      </li>
+      <li>
+        <a class="essay" href="#">
+          <div class="essay-meta">2025</div>
+          <div class="essay-title">[Title of your third idea or essay]</div>
+          <p class="essay-blurb">[One or two sentences summarizing the piece.]</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-block">
+      <div class="about-mark">[Y]</div>
+      <p class="essay-blurb">
+        [A short bio paragraph: your background, what you're currently working
+        on, and what kinds of ideas this site will cover. Keep it to 3–4
+        sentences — this page is about the writing, not the biography.]
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 [Your Name]</span>
+  <a href="mailto:you@example.com">you@example.com</a>
+</footer>
+
+</body>
+</html>
